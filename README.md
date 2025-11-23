@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 💰Financely - Your Personal Finance Tracker
 
-## Available Scripts
+A responsive and modern **Finance Tracker** built using **React**, **Firebase** enabling users to track income, expenses, and net balance in real-time. This application helps users visualize their spending habits and manage personal finances effectively.
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Client:** React (react-router, react-toastify) || CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Server:** Firebase (Authentication & Firestore)
 
-### `npm test`
+**External Libraries:** Ant Design (charts, cards) || Papaparse 5 (Import & Export CSV)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##  🚀 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔐 Secure User Authentication
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Email/Password authentication using Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Google Sign-In for fast, convenient onboarding
 
-### `npm run eject`
+    - User-specific data isolation ensuring complete privacy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Persistent login sessions for a seamless experience
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📊 Real-Time Finance Tracking
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    - Add, edit and delete income and expense entries
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    - Live updates using Cloud Firestore’s real-time listeners
 
-## Learn More
+    - Automatic calculation of balance, total income, and total expenses
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Categorized transactions with filtering transactions by date/amount
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🎨 Modern UI/UX
 
-### Code Splitting
+    - Clean, minimal interface optimized for user experience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    - Dashboard showing total income, total expense and current balance
 
-### Analyzing the Bundle Size
+    - Visual representation (e.g., charts) of income vs expense over time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    - export / import transactions in CSV file
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📁 Live Demo
 
-### Advanced Configuration
+https://finance-tracker-pi-ten.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## ✨ Next Steps (Under progress)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add categories customisation (allow user to add/edit categories).
+- Edit, Delete transactions from transactions table.
+- Integrate notifications/reminders (e.g., upcoming bills, low-balance alerts).
+- Mobile-first design enhancements.
+- Improve UI/UX (animations, light/dark mode).
