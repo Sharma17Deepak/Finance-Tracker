@@ -24,16 +24,6 @@ const SignUpComp = () => {
 
   function signupWithEmail() {
     setLoading(true);
-    console.log(
-      "Name: " +
-        name +
-        " Email: " +
-        email +
-        " Password: " +
-        password +
-        " Cp: " +
-        confirmPass
-    );
     if (name !== "" && email !== "" && password !== "" && confirmPass !== "") {
       if (password === confirmPass) {
         createUserWithEmailAndPassword(auth, email, password)

@@ -17,32 +17,38 @@ const Header = () => {
   }, [user, loading]);
 
   function logoutfnc() {
-    try{
+    try {
       signOut(auth)
-      .then(() => {
-        navigate("/");
-        toast.success("User Logged Out Successfully!");
-        // Sign-out successful.
-      })
-      .catch((error) => {
-        toast.error(error.message);
-      });
-    }catch(e){
+        .then(() => {
+          navigate("/");
+          toast.success("User Logged Out Successfully!");
+          // Sign-out successful.
+        })
+        .catch((error) => {
+          toast.error(error.message);
+        });
+    } catch (e) {
       toast.error(e.message);
     }
   }
   return (
     <div className="navbar">
       <p className="logo">Financly.</p>
-      {user && (
-      <div className="nav-head">
-        <img src={defaultImg } 
-          alt="user-image"
-        />
-        <p className="logo link" onClick={logoutfnc}>
-          Logout
+      {user ? (
+        <p className="navbar-link" onClick={logoutfnc}>
+          <span style={{ marginRight: "1rem" }}>
+            <img
+              src={user.photoURL ? user.photoURL : defaultImg}
+              width={user.photoURL ? "32" : "24"}
+              style={{ borderRadius: "50%" }}
+            />
+          </span>
+          <pre className="logo link" onClick={logoutfnc}>
+            Logout
+          </pre>
         </p>
-      </div>
+      ) : (
+        <></>
       )}
     </div>
   );

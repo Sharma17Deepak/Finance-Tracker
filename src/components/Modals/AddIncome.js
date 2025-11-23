@@ -11,7 +11,7 @@ function AddIncomeModal({
     <Modal
       style={{ fontWeight: 600 }}
       title="Add Income"
-      visible={isIncomeModalVisible}
+      open={isIncomeModalVisible}
       onCancel={handleIncomeCancel}
       footer={null}
     >
@@ -34,7 +34,7 @@ function AddIncomeModal({
             },
           ]}
         >
-          <Input type="text" className="custom-input" />
+          <Input type="text" className="custom-input" autoComplete="off"/>
         </Form.Item>
         <Form.Item
           style={{ fontWeight: 600 }}
@@ -44,7 +44,7 @@ function AddIncomeModal({
             { required: true, message: "Please input the income amount!" },
           ]}
         >
-          <Input type="number" className="custom-input" />
+          <Input type="number" className="custom-input" autoComplete="off"/>
         </Form.Item>
         <Form.Item
           style={{ fontWeight: 600 }}
@@ -63,6 +63,7 @@ function AddIncomeModal({
           rules={[{ required: true, message: "Please select a tag!" }]}
         >
           <Select className="select-input-2">
+            <Select.Option value="business">Business</Select.Option>
             <Select.Option value="salary">Salary</Select.Option>
             <Select.Option value="freelance">Freelance</Select.Option>
             <Select.Option value="investment">Investment</Select.Option>

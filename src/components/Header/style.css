@@ -19,7 +19,7 @@
 }
 
 .link{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .link:hover{
@@ -37,4 +37,13 @@
     border-radius:50%;
     height:2rem;
     width:2rem;
+}
+
+.navbar-link{
+    color:var(--white);
+    font-weight:500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
