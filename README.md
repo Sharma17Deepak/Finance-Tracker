@@ -51,11 +51,6 @@ A responsive and modern **Finance Tracker** built using **React**, **Firebase** 
 https://finance-tracker-pi-ten.vercel.app/
 
 
-## Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/1mjIQbFmsWD9OXPLf_tIh-MApKf46oNWc/view?usp=drive_link)
-
-
 ## ✨ Next Steps (Under progress)
 
 - Add categories customisation (allow user to add/edit categories).
